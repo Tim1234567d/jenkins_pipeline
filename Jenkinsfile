@@ -22,4 +22,13 @@ pipeline {
             }
         }
     }
+    post { 
+     always { 
+        echo "post logic always"
+     }
+     success {
+        echo "post logic success"
+     }
+   }
 }
+
